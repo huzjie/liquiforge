@@ -1,0 +1,6 @@
+apiVersion: v2
+name: liquiforge
+description: Helm chart for the liquiforge tri-hybrid omni backbone reference
+type: application
+version: 0.1.0
+appVersion: "0.1.0"

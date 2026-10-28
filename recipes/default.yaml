@@ -1,0 +1,21 @@
+model:
+  dim: 128
+  n_layers: 6
+  n_heads: 4
+  ffn_mult: 4
+  n_experts: 8
+  top_k: 2
+  conv_kernel: 5
+  vocab_size: 256
+  n_patch: 49
+  audio_bins: 80
+  codebook: 256
+  n_actions: 16
+training:
+  lr: 0.1
+  epochs: 20
+  target_skill: 0.95
+  seed: 20261028
+serving:
+  host: 127.0.0.1
+  port: 8787

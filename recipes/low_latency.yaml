@@ -1,0 +1,13 @@
+model:
+  dim: 32
+  n_layers: 2
+  n_heads: 2
+  ffn_mult: 1
+  n_experts: 4
+  top_k: 1
+  conv_kernel: 3
+training:
+  lr: 0.2
+  epochs: 10
+  target_skill: 0.9
+  seed: 20261028

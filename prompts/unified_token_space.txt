@@ -1,0 +1,4 @@
+设计全模态统一 token 空间：
+1. 每个 token = (modality, local_id)，映射到共享嵌入表相邻区段
+2. 文本用 BPE，视觉用 patch，音频用 STFT->mel->VQ
+3. 跨模态对齐依赖共享嵌入，别各模态各搞一套

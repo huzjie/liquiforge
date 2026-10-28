@@ -1,0 +1,2 @@
+给定状态 {state}，从动作空间 {actions} 中选择一个动作。
+要求：输出 (action, confidence, reason)，并说明该动作如何推进目标 {goal}。

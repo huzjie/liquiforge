@@ -1,0 +1,5 @@
+用 LoRA 从一个 Base 微调多任务：
+1. 冻结主干，只训 A@B（rank≈8）
+2. scale = alpha / rank，别混调
+3. 每个任务一份 LoRA，增量参数占全量零头
+4. 推理时 delta = A@(B@x)，可合并回原权重

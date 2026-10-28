@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "liquiforge"
+version = "0.1.0"
+description = "LFM3-style tri-hybrid omni-modal unified backbone reference implementation (text/vision/audio/omni/decision). Pure Python, zero dependencies."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "liquiforge contributors" }]
+keywords = ["multimodal", "linear-attention", "moe", "tri-hybrid", "omni-model", "decision", "zero-dependency"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+]
+
+[project.scripts]
+liquiforge = "liquiforge.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["liquiforge*"]

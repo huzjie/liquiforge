@@ -1,0 +1,9 @@
+model:
+  dim: 128
+  n_layers: 6
+  n_actions: 32
+training:
+  lr: 0.1
+  epochs: 30
+  target_skill: 0.97
+  seed: 20261028
